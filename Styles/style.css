@@ -1,0 +1,12 @@
+:root{
+    --primary-color:#EBECEE;
+    --secundary-color:#FFFFFF;
+    --hightlighted-color: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: var(--primary-color);
+}
