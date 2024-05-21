@@ -1,0 +1,21 @@
+.header{
+    background-color: var(--secundary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__menu{
+    width: 48px;
+    height: 48px;
+    background-image: url("../img/icons/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header__conteiner{
+    display: flex;
+    align-items: center;
+}
+.header__conteiner__img{
+    padding: 1em;
+}
