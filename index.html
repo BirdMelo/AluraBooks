@@ -5,14 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Books</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/icons/icon.png">
 </head>
 <body>
     <header class="header">
         <div class="header__conteiner">
-            <span  class="header__menu header__conteiner__img"></span>
+            <input type="checkbox" id="menu" class="header__conteiner__button">
+            <label for="menu">
+                <span  class="header__menu header__conteiner__img"></span>
+            </label>
+            <ul class="menuList">
+                <li class="menuList__title">Categoria</li>
+                <li class="menuList__items">
+                    <a href="#" class="menuList__items__link">Programação</a>
+                </li>
+                <li class="menuList__items">
+                    <a href="#" class="menuList__items__link">Front-End</a>
+                </li>
+                <li class="menuList__items">
+                    <a href="#" class="menuList__items__link">Infraestrutura</a>
+                </li>
+                <li class="menuList__items">
+                    <a href="#" class="menuList__items__link">Business</a>
+                </li>
+                <li class="menuList__items">
+                    <a href="#" class="menuList__items__link">Design & UX</a>
+                </li>
+            </ul>
             <img src="img/icons/Logo.svg" alt="Logo AluraBooks">
         </div>
         <div class="header__conteiner">
@@ -20,10 +41,13 @@
             <a href="#"><img src="img/icons/Compras.svg" alt="Compras" class="header__conteiner__img"></a>
             <a href="#"><img src="img/icons/Usuario.svg" alt="Usuário" class="header__conteiner__img"></a>
         </div>
-        
     </header>
     <main>
-
+        <section class="banner">
+            <h2 class="banner__title">Já sabe por onde começar?</h2>
+            <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__research" placeholder="Qual será sua próxima leitura?">
+        </section>
     </main>
     <footer>
         
