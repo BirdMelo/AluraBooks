@@ -1,0 +1,20 @@
+.carousel{
+    text-align: center;
+}
+.section_title{
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: var(--secundary-color);
+    padding: 1em 0 0.5em;
+}
+.swiper-slide img {
+    width: 100%;
+}
+.swiper-button-prev, 
+.swiper-button-next{
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0
+}
