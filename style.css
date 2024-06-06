@@ -3,11 +3,14 @@
 @import url("../styles/banner.css");
 @import url("../styles/carousel.css");
 @import url("../styles/cards.css");
+@import url("../styles/topics.css");
+@import url("styles/footer.css");
 
 :root{
     --primary-color:#EBECEE;
     --secundary-color:#FFFFFF;
     --title-color:#EB9B00;
+    --detail-color: #002F52;
     --hightlighted-color: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
 
     --main-Font: "Poppins", sans-serif;
@@ -25,4 +28,17 @@ body{
 .titles{
     color: var(--title-color);
     font-weight: 700;
+}
+.button_ancor{
+    background-color: var(--title-color);
+    padding: 1em 2.2em;
+    text-decoration: none;
+    color: var(--secundary-color);
+    font-weight: 700;
+}
+.hightlighted-color_text{
+    background: var(--hightlighted-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
