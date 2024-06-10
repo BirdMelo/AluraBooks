@@ -15,7 +15,7 @@
         <div class="header__conteiner">
             <input type="checkbox" id="menu" class="header__conteiner__button">
             <label for="menu">
-                <span  class="header__menu header__conteiner__img"></span>
+                <span  class="header__menu header__conteiner__img" id="hamburgue_options"></span>
             </label>
             <ul class="menuList">
                 <li class="menuList__title">Categoria</li>
@@ -35,12 +35,39 @@
                     <a href="#" class="menuList__items__link">Design & UX</a>
                 </li>
             </ul>
-            <img src="img/icons/Logo.svg" alt="Logo AluraBooks">
+            <img src="img/icons/Logo.svg" alt="Logo AluraBooks" id="AluraBooks_logo">
+            <h1 id="header__conteiner__title_Logo"><b id="header__conteiner__title_Logo-B">Alura</b>Books</h1>
+            
         </div>
+        <ul class="options">
+            <input type="checkbox" id="menu_options">
+            <label for="menu_options" class="label_button">
+                <li class="options__items">Categoria</li>
+            </label>
+            <ul class="menuList">
+                <li class="menuList__items">
+                    <a href="#" class="menuList__items__link">Programação</a>
+                </li>
+                <li class="menuList__items">
+                    <a href="#" class="menuList__items__link">Front-End</a>
+                </li>
+                <li class="menuList__items">
+                    <a href="#" class="menuList__items__link">Infraestrutura</a>
+                </li>
+                <li class="menuList__items">
+                    <a href="#" class="menuList__items__link">Business</a>
+                </li>
+                <li class="menuList__items">
+                    <a href="#" class="menuList__items__link">Design & UX</a>
+                </li>
+            </ul>
+            <li class="options__items"><a href="#" class="options__link">Favoritos</a></li>
+            <li class="options__items"><a href="#" class="options__link">Minha Estante</a></li>
+        </ul>
         <div class="header__conteiner">
-            <a href="#"><img src="img/icons/Favoritos.svg" alt="Favoritos" class="header__conteiner__img"></a>
-            <a href="#"><img src="img/icons/Compras.svg" alt="Compras" class="header__conteiner__img"></a>
-            <a href="#"><img src="img/icons/Usuario.svg" alt="Usuário" class="header__conteiner__img"></a>
+            <a href="#"><img src="img/icons/Favoritos.svg" alt="Favoritos" class="header__conteiner__img" id="Favoritos"></a>
+            <a href="#"><img src="img/icons/Compras.svg" alt="Compras" class="header__conteiner__img" id="Compras"></a>
+            <a href="#"><img src="img/icons/Usuario.svg" alt="Usuário" class="header__conteiner__img" id="Usuario"></a>
         </div>
     </header>
     <main>
@@ -153,7 +180,37 @@
         </section>
         <hr/>
         <section class="footer_end">
-            <h2 class="footer_end__text">Grupo Alura</h2>
+            <input type="checkbox" id="Alura_Groups" class="footer__Alura_Group">
+            <label for="Alura_Groups">
+                <h2 class="footer_end__text">Grupo Alura</h2>
+            </label>
+            <div class="footer__Alura_Groups__column">
+                <ul class="footer__Alura_Groups__List">
+                    <li class="footer__Alura_Groups__Titles">educação</li>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/Caelum.svg" alt="Caelum"><p>Caelum</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/CasaDoCodigo.svg" alt="Casa do Codigo"><p>Casa do Codigo</p></li></a>
+                </ul>
+                <ul class="footer__Alura_Groups__List">
+                    <li class="footer__Alura_Groups__Titles">educação online</li>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/Alura.svg" alt="Alura">Alura</li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/AluraEmpresas.svg" alt="Alura para empresas"><p>Alura para empresas</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/AluraLATAM.svg" alt="Alura LATAM"><p>Alura LATAM</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/AluraStart.svg" alt="Alura Start"><p>Alura Start</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/MusicDot.svg" alt="Music Dot"><p>Music Dot</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/AluraLingua.svg" alt="Alura Lingua"><p>Alura Lingua</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/PM3.svg" alt="PM3"><p>PM3</p></li></a>
+                </ul>
+                <ul class="footer__Alura_Groups__List">
+                    <li class="footer__Alura_Groups__Titles">comunidade</li>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/HipstersTech.svg" alt="Hipsters ponto Tech"><p>Hipsters ponto Tech</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/ScubaDev.svg" alt="Scuba Dev"><p>Scuba Dev</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/LayersTech.svg" alt="Layers ponto Tech"><p>Layers ponto Tech</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/LikeABoss.svg" alt="Like a Boss"><p>Like a Boss</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/CarreiraSemFronteira.svg" alt="Carreira Sem Fronteira"><p>Carreira sem Fronteira</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/HipstersJobs.svg" alt="Hipsters ponto Jobs"><p>Hipsters ponto Jobs</p></li></a>
+                    <li class="footer__Alura_Groups__items"><a href="#" class="footer__Alura_Groups__link"><img class="footer__Alura_Groups__img" src="img/aluraGroup/GUJ.svg" alt="GUJ"><p>GUJ</p></li></a>
+                </ul>
+            </div>
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

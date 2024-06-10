@@ -32,10 +32,13 @@
 .header__conteiner__button:checked ~ .menuList {
     display: block;
 }
+.header__conteiner__button:checked~.header__menu{
+    background-image: url("../img/icons/menu_black.svg");
+}
 .menuList__title , .menuList__items{
     padding: 1em;
     background-color: var(--secundary-color);
-    color: var(--hightlighted-color);
+    font-size: 13px;
 }
 .menuList__title{
     color: var(--title-color);
@@ -48,4 +51,59 @@
     background-clip: text;
 
     text-transform: uppercase;
+}
+
+#header__conteiner__title_Logo{
+    display: none;
+}
+.options{
+    display: none;
+}
+.label_button{
+    display: flex;
+    cursor: pointer;
+}
+.label_button input[type="checkbox"]:checked+.options__items{
+    background: var(--hightlighted-color);
+}
+@media screen and (min-width:1024px) {
+    #header__conteiner__title_Logo, #header__conteiner__title_Logo-B{
+        display: flex;
+        font-family: var(--logo-Font);
+        font-size: 30px;
+        margin-left: 0.4em;
+    }
+    #header__conteiner__title_Logo{
+        font-weight: 400;
+    }
+    #header__conteiner__title_Logo-B{
+        font-weight: 700;
+    }
+    .options{
+        display: flex;
+    }
+    .options__items{
+        padding: 1.5em;
+        text-transform: uppercase;
+    }
+    .options__link{
+        text-decoration: none;
+        color: var(--text-standard);
+    }
+    #Favoritos, #hamburgue_options{
+        display: none;
+    }
+    #AluraBooks_logo{
+        margin-left: 4em;
+    }
+    #menu_options{
+        display: none;
+    }
+    #menu_options:checked ~ .menuList{
+        display: block;
+        width: auto;
+    }
+    .menuList__title , .menuList__items{
+        font-size: 15px;
+    }
 }

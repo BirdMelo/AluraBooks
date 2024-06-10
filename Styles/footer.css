@@ -32,6 +32,35 @@ hr{
     margin: 0;
 }
 .footer_end{
-    background-color: var(--secundary-color);
     padding: 1em;
+}
+
+.footer__Alura_Group{
+    display: none;
+}
+.footer__Alura_Groups__column{
+    display: none;
+    gap: 8px;
+    justify-content: center;
+}
+.footer__Alura_Groups__link{
+    text-decoration: none;
+    color: #474646;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.footer__Alura_Groups__Titles, .footer__Alura_Groups__items{
+    font-size: 10px;
+    padding: 6px 0;
+}
+.footer__Alura_Groups__Titles{
+    text-transform: uppercase;
+    padding-top: 1.5em;
+}
+.footer__Alura_Groups__img{
+    width: 14px;
+}
+.footer__Alura_Group:checked ~ .footer__Alura_Groups__column{
+    display: flex;
 }
