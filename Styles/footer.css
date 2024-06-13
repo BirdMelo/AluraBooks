@@ -45,7 +45,7 @@ hr{
 }
 .footer__Alura_Groups__link{
     text-decoration: none;
-    color: #474646;
+    color: var(--link-line-footer);
     display: flex;
     align-items: center;
     gap: 5px;
@@ -55,6 +55,7 @@ hr{
     padding: 6px 0;
 }
 .footer__Alura_Groups__Titles{
+    color: var(--title-column-footer);
     text-transform: uppercase;
     padding-top: 1.5em;
 }
@@ -63,4 +64,47 @@ hr{
 }
 .footer__Alura_Group:checked ~ .footer__Alura_Groups__column{
     display: flex;
+}
+@media screen and (min-width:1024px) {
+    .contact{
+        display: flex;
+        gap: 10%;
+        padding: 1.87em 9.76em;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__title{
+        font-size: 24px;
+        padding-bottom: 1.1875em;
+    }
+    .contact__Email{
+        margin-bottom: 35px;
+    }
+    .footer_end{
+        display: flex;
+        gap: 4em;
+    }
+    .footer_end__text{
+        padding-top: 10px;
+        font-size: 24px;
+    }
+    .footer__Alura_Groups__column{
+        display: flex;
+        gap: 4em;
+    }
+    .footer__Alura_Groups__Titles,.footer__Alura_Groups__items{
+        font-size: 14px;
+    }
+    .footer__Alura_Groups__items{
+        padding: 16px 0;
+    }
+    .footer__Alura_Groups__Titles{
+        padding-top: 15px;
+    }
+    .footer__Alura_Groups__img{
+        width: 30px;
+    }
+    .footer__Alura_Groups__link{
+        gap: 1em;
+    }
 }

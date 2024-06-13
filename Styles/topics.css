@@ -14,8 +14,19 @@
     justify-content: center;
 }
 .topics__item{
-    margin: 2em 0.5em;
+    margin: 1.5em 0.5em;
 }
 #topics__ancor{
     font-size: 14px;
+}
+@media screen and (min-width:1024px){
+    .topics__title, #topics__ancor{
+        font-size: 24px;
+    }
+    #topics__ancor{
+        padding: 24px 32px;
+    }
+    .topics__item{
+        margin: 2.7em 1em;
+    }
 }

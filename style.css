@@ -14,6 +14,8 @@
     --detail-color: #002F52;
     --hightlighted-color: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --text-standard:#000000;
+    --title-column-footer: #858585;
+    --link-line-footer:#474646;
 
     --main-Font: "Poppins", sans-serif;
     --logo-Font: "Josefin Sans", sans-serif;
