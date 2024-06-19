@@ -45,3 +45,14 @@
         background-position: 15%;
     }
 }
+@media screen and (min-width:1280px) {
+    .banner__research{
+        width: 31%;
+    }
+    .banner__research::placeholder{
+        background-position: 1em;
+    }
+    .banner{
+        padding: 5.25em;
+    }
+}

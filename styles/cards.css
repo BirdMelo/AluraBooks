@@ -5,6 +5,11 @@
     margin: 1em;
     padding: 1em;
 }
+.card__description__text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .card__description{
     display: flex;
     text-align:start;
@@ -28,9 +33,23 @@
 .buttons__item{
     padding: 0 0.5em;
 }
+#stars{
+    width: 60px;
+}
 @media screen and (min-width:1024px){
     .card{
         width: 40%;
         margin: 3em auto;
+    }
+}
+@media screen and (min-width:1280px) {
+    .text__title{
+        font-size: 32px;
+    }
+    .description__text{
+        font-size: 16px;
+    }
+    .card{
+        margin-bottom: 0;
     }
 }

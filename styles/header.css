@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
 }
-.header__conteiner__button{
+.header__conteiner__button, .header__conteiner__text{
     display: none;
 }
 .header__conteiner__img{
@@ -31,9 +31,6 @@
 }
 .header__conteiner__button:checked ~ .menuList {
     display: block;
-}
-.header__conteiner__button:checked~.header__menu{
-    background-image: url("../img/icons/menu_black.svg");
 }
 .menuList__title , .menuList__items{
     padding: 1em;
@@ -63,9 +60,23 @@
     display: flex;
     cursor: pointer;
 }
-.label_button input[type="checkbox"]:checked+.options__items{
+.header__conteiner__button:checked~#header__conteiner__label>#hamburgue_options{
+    background-image: url("/img/icons/Menu_Aberto.svg");
+}
+.header__conteiner__button:checked~#header__conteiner__label{
     background: var(--hightlighted-color);
 }
+#AluraBooks_logo{
+    margin-left: 20px;
+}
+.menuList__items:hover{
+    background: var(--hightlighted-color);
+}
+.menuList__items:hover>.menuList__items__link{
+    -webkit-text-fill-color: var(--secundary-color);
+    text-decoration: none;
+}
+
 @media screen and (min-width:1024px) {
     #header__conteiner__title_Logo, #header__conteiner__title_Logo-B{
         display: flex;
@@ -94,10 +105,7 @@
         display: none;
     }
     #AluraBooks_logo{
-        margin-left: 4em;
-    }
-    #menu_options{
-        display: none;
+        margin-left: 5em;
     }
     #menu_options:checked ~ .menuList{
         display: block;
@@ -105,5 +113,32 @@
     }
     .menuList__title , .menuList__items{
         font-size: 15px;
+    }
+    .header__conteiner__button:checked~.label_button{
+        background: var(--hightlighted-color);
+        color: var(--secundary-color);
+    }
+
+}
+@media screen and (min-width:1280px) {
+    .header{
+        justify-content:flex-start;
+    }
+    #header__conteiner__title_Logo{
+        margin-right: 33px;
+    }
+    #header__conteiner__icons{
+        margin-left: auto;
+    }
+    .header__conteiner__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--text-standard);
+        margin-right: 3.8125em;
+    }
+    .header__conteiner__text{
+        display: block;
+        font-size: 20px;
     }
 }

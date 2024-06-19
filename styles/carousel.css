@@ -34,3 +34,20 @@
         top: 60%;
     }
 }
+@media screen and (min-width:1280px) {
+    .carousel-card{
+        display: flex;
+        align-items: center;
+        margin: 5vw 2vw;
+    }
+    .swiper{
+        width: 50%;
+    }
+    .swiper-slide img {
+        width: 80%;
+    }
+    .swiper-pagination{
+        margin: 1em 0em;
+        
+    }
+}
